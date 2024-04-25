@@ -1,6 +1,14 @@
 # Additional Slots Victory Fix (Smashline 2)
 
-Skyline plugin modifying Byleth's win scripts to have voice lines and sound effects function properly on added slots (c08+)
+Skyline plugin modifying certain characters' audio on victory screens when utilizing added slots to play as intended, as without this plugin they will remain mute.
+
+The following characters are fixed in this plugin:
+* Ike
+* Pokemon Trainer
+* Wii Fit Trainer
+* Robin
+* Corrin
+* Byleth
 
 Note that this plugin specifically is coded to follow the costume distribution of the base game, so any deviations (ie stacking multiple male slots in succession and vice versa) will result in mismatched audio.
 
