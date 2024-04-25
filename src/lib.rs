@@ -13,13 +13,31 @@
     clippy::borrow_interior_mutable_const
 )]
 
-mod win1;
-mod win2;
-mod win3;
+mod byleth;
+mod corrin;
+mod robin;
+mod ike;
 
-#[skyline::main(name = "byleth_victoryfix_SL2_personal")]
+mod ptrainer_win1;
+mod ptrainer_win2;
+mod ptrainer_win3;
+
+mod wft_win1;
+mod wft_win2;
+mod wft_win3;
+
+#[skyline::main(name = "additional_slots_victoryfix_SL2")]
 pub fn main() {
-    win1::install();
-    win2::install();
-    win3::install();
+    byleth::install();
+    corrin::install();
+    robin::install();
+    ike::install();
+
+    ptrainer_win1::install();
+    ptrainer_win2::install();
+    ptrainer_win3::install();
+
+    wft_win1::install();
+    wft_win2::install();
+    wft_win3::install();
 }
