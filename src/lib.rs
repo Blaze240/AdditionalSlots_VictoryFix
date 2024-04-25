@@ -26,7 +26,7 @@ mod wft_win1;
 mod wft_win2;
 mod wft_win3;
 
-#[skyline::main(name = "additional_slots_victoryfix_SL2")]
+#[skyline::main(name = "additional_slots_victoryfix_SL2_personal")]
 pub fn main() {
     byleth::install();
     corrin::install();

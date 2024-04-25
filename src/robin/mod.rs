@@ -10,7 +10,29 @@ use {
 };
 
 unsafe extern "C" fn reflet_sound_win1a(agent: &mut L2CAgentBase) {
-    if WorkModule::get_int(agent.module_accessor, *FIGHTER_INSTANCE_WORK_ID_INT_COLOR) % 2 == 0 {
+    let x = WorkModule::get_int(agent.module_accessor, *FIGHTER_INSTANCE_WORK_ID_INT_COLOR);
+    if x == 8 || x == 10 {
+        frame(agent.lua_state_agent, 46.0);
+        if macros::is_excute(agent) {
+            macros::PLAY_SE(agent, Hash40::new("se_reflet_fire_02_win01"));
+        }
+        frame(agent.lua_state_agent, 48.0);
+        if macros::is_excute(agent) {
+            macros::PLAY_SE_NO_3D(agent, Hash40::new("vc_reflet_win01"));
+        }
+        frame(agent.lua_state_agent, 91.0);
+        if macros::is_excute(agent) {
+            macros::PLAY_SE(agent, Hash40::new("se_reflet_special_s02_win01"));
+            macros::STOP_SE(agent, Hash40::new("se_reflet_fire_02_win01"));
+        }
+        frame(agent.lua_state_agent, 125.0);
+        if macros::is_excute(agent) {
+            macros::PLAY_SE(agent, Hash40::new("se_reflet_win1"));
+            macros::PLAY_SE(agent, Hash40::new("se_common_swing_03"));
+        }
+    } else if WorkModule::get_int(agent.module_accessor, *FIGHTER_INSTANCE_WORK_ID_INT_COLOR) % 2
+        == 0
+    {
         frame(agent.lua_state_agent, 40.0);
         if macros::is_excute(agent) {
             macros::PLAY_SE_NO_3D(agent, Hash40::new("vc_reflet_win01"));
@@ -52,7 +74,25 @@ unsafe extern "C" fn reflet_sound_win1a(agent: &mut L2CAgentBase) {
 }
 
 unsafe extern "C" fn reflet_sound_win1b(agent: &mut L2CAgentBase) {
-    if WorkModule::get_int(agent.module_accessor, *FIGHTER_INSTANCE_WORK_ID_INT_COLOR) % 2 == 0 {
+    let x = WorkModule::get_int(agent.module_accessor, *FIGHTER_INSTANCE_WORK_ID_INT_COLOR);
+    if x == 8 || x == 10 {
+        frame(agent.lua_state_agent, 46.0);
+        if macros::is_excute(agent) {
+            macros::PLAY_SE(agent, Hash40::new("se_reflet_fire_02_win01"));
+        }
+        frame(agent.lua_state_agent, 91.0);
+        if macros::is_excute(agent) {
+            macros::PLAY_SE(agent, Hash40::new("se_reflet_special_s02_win01"));
+            macros::STOP_SE(agent, Hash40::new("se_reflet_fire_02_win01"));
+        }
+        frame(agent.lua_state_agent, 125.0);
+        if macros::is_excute(agent) {
+            macros::PLAY_SE(agent, Hash40::new("se_reflet_win1"));
+            macros::PLAY_SE(agent, Hash40::new("se_common_swing_03"));
+        }
+    } else if WorkModule::get_int(agent.module_accessor, *FIGHTER_INSTANCE_WORK_ID_INT_COLOR) % 2
+        == 0
+    {
         frame(agent.lua_state_agent, 40.0);
         if macros::is_excute(agent) {
             macros::PLAY_SE_NO_3D(agent, Hash40::new("vc_reflet_win_lucina"));
@@ -90,7 +130,23 @@ unsafe extern "C" fn reflet_sound_win1b(agent: &mut L2CAgentBase) {
 }
 
 unsafe extern "C" fn reflet_sound_win2a(agent: &mut L2CAgentBase) {
-    if WorkModule::get_int(agent.module_accessor, *FIGHTER_INSTANCE_WORK_ID_INT_COLOR) % 2 == 0 {
+    let x = WorkModule::get_int(agent.module_accessor, *FIGHTER_INSTANCE_WORK_ID_INT_COLOR);
+    if x == 8 || x == 10 {
+        frame(agent.lua_state_agent, 5.0);
+        if macros::is_excute(agent) {
+            macros::PLAY_SE_NO_3D(agent, Hash40::new("vc_reflet_win02"));
+        }
+        frame(agent.lua_state_agent, 50.0);
+        if macros::is_excute(agent) {
+            macros::PLAY_SE(agent, Hash40::new("se_reflet_win2_01"));
+        }
+        frame(agent.lua_state_agent, 123.0);
+        if macros::is_excute(agent) {
+            macros::PLAY_SE(agent, Hash40::new("se_reflet_smash_s01_win02"));
+        }
+    } else if WorkModule::get_int(agent.module_accessor, *FIGHTER_INSTANCE_WORK_ID_INT_COLOR) % 2
+        == 0
+    {
         frame(agent.lua_state_agent, 47.0);
         if macros::is_excute(agent) {
             macros::PLAY_SE_NO_3D(agent, Hash40::new("vc_reflet_win02"));
@@ -120,7 +176,27 @@ unsafe extern "C" fn reflet_sound_win2a(agent: &mut L2CAgentBase) {
 }
 
 unsafe extern "C" fn reflet_sound_win3a(agent: &mut L2CAgentBase) {
-    if WorkModule::get_int(agent.module_accessor, *FIGHTER_INSTANCE_WORK_ID_INT_COLOR) % 2 == 0 {
+    let x = WorkModule::get_int(agent.module_accessor, *FIGHTER_INSTANCE_WORK_ID_INT_COLOR);
+    if x == 8 || x == 10 {
+        frame(agent.lua_state_agent, 80.0);
+        if macros::is_excute(agent) {
+            macros::PLAY_SE_NO_3D(agent, Hash40::new("vc_reflet_win03"));
+        }
+        frame(agent.lua_state_agent, 97.0);
+        if macros::is_excute(agent) {
+            macros::PLAY_SE(agent, Hash40::new("se_reflet_win1"));
+        }
+        frame(agent.lua_state_agent, 117.0);
+        if macros::is_excute(agent) {
+            macros::PLAY_SE(agent, Hash40::new("se_reflet_win3_01"));
+        }
+        frame(agent.lua_state_agent, 120.0);
+        if macros::is_excute(agent) {
+            macros::PLAY_SE(agent, Hash40::new("se_reflet_smash_s01_win03"));
+        }
+    } else if WorkModule::get_int(agent.module_accessor, *FIGHTER_INSTANCE_WORK_ID_INT_COLOR) % 2
+        == 0
+    {
         frame(agent.lua_state_agent, 25.0);
         if macros::is_excute(agent) {
             macros::PLAY_SE_NO_3D(agent, Hash40::new("vc_reflet_win03"));
@@ -158,7 +234,26 @@ unsafe extern "C" fn reflet_sound_win3a(agent: &mut L2CAgentBase) {
 }
 
 unsafe extern "C" fn reflet_sound_win3b(agent: &mut L2CAgentBase) {
-    if WorkModule::get_int(agent.module_accessor, *FIGHTER_INSTANCE_WORK_ID_INT_COLOR) % 2 == 0 {
+    let x = WorkModule::get_int(agent.module_accessor, *FIGHTER_INSTANCE_WORK_ID_INT_COLOR);
+    if x == 8 || x == 10 {
+        frame(agent.lua_state_agent, 0.0);
+        if macros::is_excute(agent) {
+            macros::PLAY_SE_NO_3D(agent, Hash40::new("vc_reflet_win_lucina"));
+        }
+        frame(agent.lua_state_agent, 97.0);
+        if macros::is_excute(agent) {
+            macros::PLAY_SE(agent, Hash40::new("se_reflet_win1"));
+        }
+        frame(agent.lua_state_agent, 117.0);
+        if macros::is_excute(agent) {
+            macros::PLAY_SE(agent, Hash40::new("se_reflet_win3_01"));
+        }
+        frame(agent.lua_state_agent, 120.0);
+        if macros::is_excute(agent) {
+            macros::PLAY_SE(agent, Hash40::new("se_reflet_smash_s01_win03"));
+        }
+    }
+    else if WorkModule::get_int(agent.module_accessor, *FIGHTER_INSTANCE_WORK_ID_INT_COLOR) % 2 == 0 {
         frame(agent.lua_state_agent, 40.0);
         if macros::is_excute(agent) {
             macros::PLAY_SE_NO_3D(agent, Hash40::new("vc_reflet_win03_chrom"));
