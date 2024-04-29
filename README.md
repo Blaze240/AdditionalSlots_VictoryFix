@@ -19,6 +19,7 @@ Keep in mind that this plugin specifically hardcodes the same costume pattern as
 
 
 ## Prerequesites
+* [Skyline](https://github.com/skyline-dev/skyline/releases)
 * [NRO_Hook](https://github.com/ultimate-research/nro-hook-plugin/releases)
 * [Smashline 2](https://github.com/HDR-Development/smashline/releases)
 
