@@ -24,4 +24,4 @@ Keep in mind that this plugin specifically hardcodes the same costume pattern as
 * [Smashline 2](https://github.com/HDR-Development/smashline/releases)
 
 ## Installation
-Place the "libadditional_slots_victoryfix" plugin in the Skyline plugins location ```sd:/atmosphere/contents/01006A800016E000/romfs/skyline/plugins/```.
+Place the ```atmosphere``` of the download into the root of the SD card. 
